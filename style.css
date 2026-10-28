@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f2f5fa;
+}
+
+header {
+    background: #244a80;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+}
+
+button {
+    background: #244a80;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #17345d;
+}
+
+#message {
+    color: #b3261e;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.column {
+    background: #e3e9f3;
+    border-radius: 8px;
+    padding: 10px;
+    min-height: 200px;
+}
+
+.column h3 {
+    margin: 0 0 10px;
+}
+
+.card {
+    background: white;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px #00000030;
+}
+
+.card button {
+    margin: 4px 2px 0 0;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+@media (max-width: 700px) {
+    .board { grid-template-columns: 1fr; }
+    form { flex-direction: column; }
+}

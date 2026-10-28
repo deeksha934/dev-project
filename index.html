@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Preparation Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Exam Preparation Tracker</h1>
+        <p>Plan your topics on a Kanban board</p>
+    </header>
+
+    <main class="container">
+        <form id="topicForm">
+            <input type="text" id="topicName" placeholder="Topic (e.g. Unit 3 - Trees)" required>
+            <input type="text" id="subjectName" placeholder="Subject (e.g. Data Structures)" required>
+            <button type="submit">Add Topic</button>
+        </form>
+
+        <p id="message"></p>
+
+        <div class="board">
+            <div class="column" id="To Study"></div>
+            <div class="column" id="Studying"></div>
+            <div class="column" id="Revising"></div>
+            <div class="column" id="Done"></div>
+        </div>
+
+        <p id="summary"></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
